@@ -16,3 +16,4 @@ public class WeightedGraph<Vertex> {
     public void addVertex(Vertex v) {
         map.put(v, new HashMap<>());
     }
+}
