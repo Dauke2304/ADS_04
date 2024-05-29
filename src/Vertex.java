@@ -18,5 +18,15 @@ public class Vertex<V> {
     public Map<Vertex<V>,Double> getAdjacentVertices() {
         return adjacentVertices;
     }
+    public boolean hasAdjacentVertices(Vertex<V> destination) {
+        return adjacentVertices.containsKey(destination);
+    }
+    public double getWeightTo(Vertex<V> destination) {
+        return adjacentVertices.get(destination);
+    }
+    @Override
+    public String toString() {
+        return String.valueOf(data);
+    }
 
 }
